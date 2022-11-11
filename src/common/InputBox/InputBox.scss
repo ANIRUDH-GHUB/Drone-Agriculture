@@ -1,0 +1,15 @@
+@import "./../../variables.scss";
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: $theme-blue !important;
+  border-width: 2px;
+}
+
+.css-19qh8xo-MuiInputBase-input-MuiOutlinedInput-input:-webkit-autofill {
+  border-radius: inherit;
+  height: 73%;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: $theme-blue !important;
+  font-weight: bold;
+}

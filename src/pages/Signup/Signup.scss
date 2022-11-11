@@ -1,0 +1,10 @@
+.drone-home-right {
+  background-image: url("./../../assets/images/drone-home.svg");
+  height: calc(100vh - 40px);
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  margin: 20px;
+  border-radius: 20px;
+}

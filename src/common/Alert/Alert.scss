@@ -1,0 +1,9 @@
+.alert {
+  min-height: 0px;
+  position: fixed;
+  min-width: 400px;
+  left: calc(50% - 200px);
+  top: 24px;
+  transition: all 1s ease-in-out !important;
+  z-index: 9999;
+}
