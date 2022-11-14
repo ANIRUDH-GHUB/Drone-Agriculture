@@ -12,18 +12,25 @@ export interface STATE {
   profile: CreateProfileDetailsType;
 }
 export interface CreateProfileDetailsType {
-  userDetails: FarmerType;
+  userDetails: UserType;
   farms: [FarmType] | Array<any>;
   landOwner: LandOwnerType;
   drivingLicence: DrivingLicenceType;
   billing: BillingDetailsType;
+  pilotCertificate: PilotCertificateType;
 }
-export interface FarmerType {
+export interface UserType {
   name: string;
   phone: string;
   email: string;
   birthday: any;
   gender: string;
+}
+export interface PilotCertificateType extends FarmType {
+  certificatinId: string;
+  gender: string;
+  height: string;
+  weight: string;
 }
 export interface FarmType {
   name: string;
@@ -60,4 +67,17 @@ export interface BillingDetailsType {
   expiration?: any;
   cvv?: string;
   phone?: string;
+}
+
+export interface DroneType {
+  drone_id: number | string | null;
+  drone_maker: string;
+  drone_model: string;
+  drone_type: string;
+  farmer_id: number | string | null;
+  land_id: number | string | null;
+  mission_id: number | string | null;
+  pilot_id: number | string | null;
+  service_type: string;
+  status: string;
 }

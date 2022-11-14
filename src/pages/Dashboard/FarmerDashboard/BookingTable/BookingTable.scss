@@ -1,0 +1,39 @@
+.MuiTableCell-root {
+  font-family: "Poppins" !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+}
+.MuiTableRow-head {
+  .MuiTableCell-root {
+    color: #b5b7c0;
+  }
+}
+.MuiTypography-root {
+  font-family: "Poppins" !important;
+}
+
+.box-status {
+  padding: 5px;
+  width: 98px;
+  margin: auto;
+  text-transform: capitalize;
+}
+.box-active {
+  color: #00b087;
+  background: rgba(22, 192, 152, 0.38);
+  border: 1px solid #00b087;
+  border-radius: 4px;
+}
+.box-booked {
+  color: #df0404;
+  background: #ffc5c5;
+  border: 1px solid #df0404;
+  border-radius: 4px;
+}
+.box-finished {
+  color: #00a3ff;
+  background: #d9fffd99;
+  border: 1px solid #00a3ff;
+  border-radius: 4px;
+}

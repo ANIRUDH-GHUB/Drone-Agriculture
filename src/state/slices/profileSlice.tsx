@@ -3,12 +3,13 @@ import {
   BillingDetailsType,
   CreateProfileDetailsType,
   DrivingLicenceType,
-  FarmerType,
+  UserType,
   FarmType,
   LandOwnerType,
+  PilotCertificateType,
 } from "../../model/interfaces";
 
-const initialState: CreateProfileDetailsType = {
+export const initialProfileState: CreateProfileDetailsType = {
   userDetails: {
     name: "",
     phone: "",
@@ -26,6 +27,17 @@ const initialState: CreateProfileDetailsType = {
     totalArea: 0,
     date: null,
   },
+  pilotCertificate: {
+    name: "",
+    address: "",
+    city: "",
+    country: "",
+    zip: "",
+    gender: "",
+    certificatinId: "",
+    height: "",
+    weight: "",
+  },
   drivingLicence: {
     name: "",
     licenceId: "",
@@ -36,9 +48,9 @@ const initialState: CreateProfileDetailsType = {
 
 export const archiveSlice = createSlice({
   name: "archive",
-  initialState,
+  initialState: initialProfileState,
   reducers: {
-    addUserDetails: (state, action: PayloadAction<FarmerType>) => {
+    addUserDetails: (state, action: PayloadAction<UserType>) => {
       state.userDetails = action.payload;
     },
     addFarmDetails: (state, action: PayloadAction<FarmType>) => {
@@ -53,6 +65,12 @@ export const archiveSlice = createSlice({
     addBillingInfo: (state, action: PayloadAction<BillingDetailsType>) => {
       state.billing = action.payload;
     },
+    addPilotCertificateInfo: (
+      state,
+      action: PayloadAction<PilotCertificateType>
+    ) => {
+      state.pilotCertificate = action.payload;
+    },
   },
 });
 
@@ -62,6 +80,7 @@ export const {
   addLandOwner,
   addDrivingLicence,
   addBillingInfo,
+  addPilotCertificateInfo,
 } = archiveSlice.actions;
 
 export default archiveSlice.reducer;

@@ -1,0 +1,52 @@
+.css-hyum1k-MuiToolbar-root {
+  @media (min-width: 600px) {
+    min-height: 91px !important;
+  }
+}
+.css-1r9jet7 {
+  @media (min-width: 600px) {
+    min-height: 91px !important;
+  }
+}
+#famer-home {
+  font-family: "Poppins", sans-serif;
+}
+.css-10hburv-MuiTypography-root {
+  font-family: "Poppins", sans-serif !important;
+}
+.css-63u7hu-MuiListItem-root.active {
+  background: #1a3447;
+  border-radius: 20px;
+  margin: 30px;
+  margin-left: 0;
+  color: white;
+  .css-wa5fuu-MuiListItemIcon-root,
+  .css-1ddsiuw-MuiListItemIcon-root {
+    color: white;
+  }
+}
+
+.css-1hsz34s-MuiDrawer-docked .MuiDrawer-paper,
+.css-1hsz34s-MuiDrawer-docked {
+  width: 290px !important;
+}
+
+.css-1191obr-MuiPaper-root-MuiAppBar-root {
+  margin-left: 209px !important;
+  width: calc(100% - 290px) !important;
+}
+
+.farm-catalog-item {
+  max-width: 43%;
+  border-radius: 20px;
+  padding: 10px;
+  img {
+    border-radius: 20px;
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+  }
+  &.active img {
+    border: 3px solid #1a3447 !important;
+  }
+}
